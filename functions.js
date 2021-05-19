@@ -69,24 +69,19 @@ const reject = function (collection, callback) {
 const uniq = function (array) {
   let arr = [];
 
-indexOf(array,)
+  each(array, function (element){
+    if (indexOf(arr, element) === -1){
+      arr.push(element)
+    }
+  })
+return arr
+
 };
-// const indexOf = function (array, target) {
-//   //array = [1], target = 1
-//   var result = -1;
 
-//   each(array, function (item, index) {
-//     //item = 1
-//     if (item === target && result === -1) {
-//       result = index;
-//       //result = 1
-//     }
-//   });
-
-//   return result;
-// };
 const reduce = function (collection, callback, accumulator) {
-  
+  let init = collection.length === 2;
+
+  each()
 };
 
 module.exports = {
